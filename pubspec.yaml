@@ -40,6 +40,8 @@ dependencies:
   lottie: ^3.1.0
   iconsax: ^0.0.8
   animated_notch_bottom_bar: ^1.0.2
+  google_mobile_ads: ^5.0.0
+  flutter_svg: ^2.0.10+1
 
 
 dev_dependencies:

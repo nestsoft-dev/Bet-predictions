@@ -1,10 +1,12 @@
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 import 'package:betting_tips/constants/colors.dart';
 import 'package:betting_tips/screens/betCodes.dart';
-import 'package:betting_tips/screens/homePage.dart';
+
 import 'package:betting_tips/screens/vip.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+
+import '../../screens/newHome.dart';
 
 class NavPage extends StatefulWidget {
   const NavPage({super.key});
@@ -31,7 +33,11 @@ class _NavPageState extends State<NavPage> {
     super.dispose();
   }
 
-  final List<Widget> _screens = const [HomePage(), VipPage(), BetCodesPage()];
+  final List<Widget> _screens = const [
+    NewHomePage(),
+    VipPage(),
+    BetCodesPage()
+  ];
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
